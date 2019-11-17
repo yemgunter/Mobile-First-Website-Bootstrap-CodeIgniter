@@ -1,0 +1,30 @@
+/*
+    Your Header Here
+*/
+
+
+/*
+***************************************
+Mobile First CSS
+***************************************
+*/
+
+
+
+/*
+***************************************
+Media Queries
+***************************************
+*/
+
+/*this is for tablet*/
+@media (min-width: 468px) and (max-width: 768px) {
+
+
+}
+
+/*this is for desktop*/
+@media (min-width: 768px) {
+
+
+}
