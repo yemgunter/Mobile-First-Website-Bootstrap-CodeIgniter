@@ -1,11 +1,12 @@
-RewriteEngine on
-RewriteBase /
-
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond $1 !^(index\.php|uploads|assets|robots\.txt|favicon\.gif)
 
 # change the next line to include your user name like this
 # RewriteRule ^(.*)$ /~u8792225/index.php/$1 [L]
 
-RewriteRule ^(.*)$ /index.php/$1 [L]
+RewriteRule ^(.*)$ /~u8792214/index.php/$1 [L]
 
 #Options -Indexes
+
