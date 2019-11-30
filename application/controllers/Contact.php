@@ -1,8 +1,11 @@
 <?php
 
-/*
- * Your Header Here
- */
+/**************************************************************
+ Name: Yolanda Gunter
+ Assignment: Final Project
+ Purpose: CodeIgniter, jQuery and Boostrap
+ Notes: Pulling everything I've learned together for my Final Project
+ **************************************************************/
 
 defined('BASEPATH') OR exit('Forbidden');
 
