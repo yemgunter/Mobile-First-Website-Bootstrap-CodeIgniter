@@ -9,6 +9,25 @@
 "use strict";
 
 $(document).ready(function () {
+
+    // Header element with id header
+    $('#header').css("text-align", "center");
+
+    // Heading paragraph elements
+    $('h1').css("text-align", "center");
+    $('h2').css("text-align", "left");
+    $('h3').css("text-align", "center");
+
+    // About Image styling
+    $('#about').css("verticle-align", "middle");
+    $('#about').css("width", "200px");
+    $('#about').css("text-align", "center");
+
+    // Footer section styling
+    $('.footer-section').css("background-color", "#e2d1dd");
+    $('.footer-section').css("horizontal-align", "center");
+
+    // Form client-side validation
     $('#email-form').validate(
         {
             rules: {
@@ -71,7 +90,7 @@ $(document).ready(function () {
         $("#email-form").submit();
         var msg = validate();
         console.log(msg);
-        if (msg ) {
+        if (msg) {
             $("#msg").html(msg);
         } else {
             $("#email-form").submit();
