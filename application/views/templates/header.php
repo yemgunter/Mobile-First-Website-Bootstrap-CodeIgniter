@@ -5,7 +5,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="author" content="Yolanda Gunter">
         <meta charset="utf-8">
 
         <!-- Bootstrap CSS -->
@@ -18,6 +18,9 @@
 
     </head>
     <body>
+        <div id="header">
+                <img src="assets/images/banner.png" alt="banner">
+        </div>
         <nav>
             <a href="home">Home</a>
             <a href="about">About</a>
