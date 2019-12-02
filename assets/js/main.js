@@ -16,7 +16,7 @@ $(document).ready(function () {
     // Heading paragraph elements
     $('h1').css("text-align", "center");
     $('h2').css("text-align", "left");
-    $('h3').css("text-align", "center");
+    $('h3').css("text-align", "left");
 
     // About Image styling
     $('#about').css("verticle-align", "middle");
@@ -86,7 +86,9 @@ $(document).ready(function () {
 
 
     $("#email-send").click(function () {
-        //uncomment this to test back-end validation
+        // I compared this section to my 03 & 08 assignments.
+        // I tried to make errors stay in fields but submit w/errors cleared form.
+        // I'm not understanding the code conversion from JavaScript to jQuery.
         $("#email-form").submit();
         var msg = validate();
         console.log(msg);
