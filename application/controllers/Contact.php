@@ -44,7 +44,7 @@ class Contact extends CI_Controller {
 
         if ($this->form_validation->run() === FALSE) {
             if(!empty(validation_errors())){
-                $data['send'] = "Error!";
+                $data['send'] = "Please correct form entry errors!";
             } else {
                 $data['send'] = "<br>";
             }
@@ -56,7 +56,7 @@ class Contact extends CI_Controller {
             if($this->sendemail()){
                 $data['send'] = "Sent!";
             } else {
-                $data['send'] = "Error!";
+                $data['send'] = "Please correct form entry errors!";
             }
             $this->load->view('templates/header', $data);
             $this->load->view('pages/contact');
