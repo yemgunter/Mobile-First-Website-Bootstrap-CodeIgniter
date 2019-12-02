@@ -1,3 +1,10 @@
+/**************************************************************
+ Name: Yolanda Gunter
+ Assignment: Final Project
+ Purpose: CodeIgniter, jQuery and Boostrap
+ Notes: Pulling everything I've learned together for my Final Project
+ **************************************************************/
+
 <br>
 <div id="msg">
     <?= $send ?>

@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+/**************************************************************
+ Name: Yolanda Gunter
+ Assignment: Final Project
+ Purpose: CodeIgniter, jQuery and Boostrap
+ Notes: Pulling everything I've learned together for my Final Project
+ **************************************************************/
+ <!DOCTYPE html>
 <html>
     <head>
         <title><?= $title ?></title>
@@ -21,8 +27,19 @@
         <div id="header">
                 <img src="assets/images/banner.png" alt="banner">
         </div>
-        <nav>
-            <a href="home">Home</a>
-            <a href="about">About</a>
-            <a href="contact">Contact</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+                   <div class="container">
+                       <a href="home" class="navbar-brand">
+                           <img src="assets/images/banner-sm.png" class="logo" alt="Tuki Teas Treats small logo"/>
+                       </a>
+                       <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                           <span class="navbar-toggler-icon"></span>
+                       </button>
+                       <div class="collapse navbar-collapse" id="navbarCollapse">
+                       <div class="navbar-nav ml-auto">
+                            <a href="home">Home</a>
+                            <a href="about">About</a>
+                            <a href="contact">Contact</a>
+                   </div>
+
         </nav>
