@@ -1,9 +1,4 @@
-/**************************************************************
- Name: Yolanda Gunter
- Assignment: Final Project
- Purpose: CodeIgniter, jQuery and Boostrap
- Notes: Pulling everything I've learned together for my Final Project
- **************************************************************/
+
 
         <div class="footer-section">
             <div class="row">
