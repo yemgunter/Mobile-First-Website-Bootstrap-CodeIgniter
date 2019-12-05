@@ -10,8 +10,21 @@
 
 $(document).ready(function () {
 
+    // Body element styling as parent
+    $('body').css("width", "90%");
+    $('body').css("margin", "0", "auto");
+    $('body').css("text-align", "justify");
+    $('body').css("background-color", "yellow");
+    $('body').css("position", "relative");
+    $('body').css("float", "left");
+    $('body').css("margin-left", "50%");
+    $('body').css("left", "-45%");
+
+
     // Header element with id header
     $('#header').css("text-align", "center");
+    $('#header').css("width", "90%");
+    $('#header').css("background-color", "white");
 
     // Heading paragraph elements
     $('h1').css("text-align", "center");
@@ -23,8 +36,10 @@ $(document).ready(function () {
     $('#about').css("width", "200px");
     $('#about').css("text-align", "center");
 
+    //
+
     // Footer section styling
-    $('.footer-section').css("background-color", "#e2d1dd");
+    $('.footer-section').css("background-color", "#b5dacd");
     $('.footer-section').css("horizontal-align", "center");
 
     // Form client-side validation
@@ -73,15 +88,16 @@ $(document).ready(function () {
                     required: "Please enter your message",
                     minlength: "Minimum length is 20 characters"
                 },
-            },
-            highlight: function(element) {
-                $(element).closest('.control-group').removeClass('success').addClass('error');
-            },
-            success: function(element) {
+
+                highlight: function(element) {
+                    $(element).closest('.control-group').removeClass('success').addClass('error');
+                },
+
+                success: function(element) {
                 element
                     .text('OK!').addClass('valid')
                     .closest('.control-group').removeClass('error').addClass('success');
-            }
+                }
         });
 
 
