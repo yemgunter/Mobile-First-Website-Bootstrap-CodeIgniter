@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="author" content="Yolanda Gunter">
         <meta charset="utf-8">
+        <link rel="icon" href="favicon.gif" type="image/gif">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -14,12 +15,15 @@
         <!-- custom CSS -->
         <link href="assets/css/main.css" rel="stylesheet">
 
-        <link rel="icon" href="favicon.gif" type="image/gif">
+       <!-- External Custom CSS -->
+       <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+       <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
     </head>
-    <body>
+<body>
+    <div class="body-container">
         <div id="header">
-                <img src="assets/images/banner.png" alt="banner">
+            <img src="assets/images/banner.png" alt="banner">
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
                    <div class="container">
