@@ -20,20 +20,33 @@ $(document).ready(function () {
     $('body').css("margin-left", "50%");
     $('body').css("left", "-45%");
 
+    // Container element styling for content readability
+    $('.container-home').css("background-color", "white");
+    $('.container-gallery').css("background-color", "#F9AD81");
+    $('.container-about').css("background-color", "white");
+    $('.container-contact').css("background-color", "#7DA7D9");
 
     // Header element with id header
     $('#header').css("text-align", "center");
     $('#header').css("width", "90%");
     $('#header').css("background-color", "white");
 
+    // Navigation styling
+    $('.navbar').css("color", "black");
+    $('.navbar').css("background-color", "transparent");
+    $('.navbar').css("border-radius", "7px");
+    $('.navbar-brand').css("width", "100%");
+
+    $('.col-lg-4').css("text-align", "center");
+
     // Heading paragraph elements
     $('h1').css("text-align", "center");
-    $('h2').css("text-align", "left");
-    $('h3').css("text-align", "left");
+    $('h2').css("text-align", "center");
+    $('h3').css("text-align", "center");
 
     // About Image styling
     $('#about').css("verticle-align", "middle");
-    $('#about').css("width", "200px");
+    $('#about').css("width", "100%");
     $('#about').css("text-align", "center");
 
     //
@@ -101,22 +114,39 @@ $(document).ready(function () {
         });
 
 
-    $("#email-send").click(function () {
-        // I compared this section to my 03 & 08 assignments.
-        // I tried to make errors stay in fields but submit w/errors cleared form.
-        // I'm not understanding the code conversion from JavaScript to jQuery.
-        $("#email-form").submit();
+    $('#email-send').click(function () {
+        $('#email-form').submit();
         var msg = validate();
         console.log(msg);
         if (msg) {
             $("#msg").html(msg);
         } else {
-            $("#email-form").submit();
+            $('#email-form').submit();
         }
     });
 
-    $("#email-clear").click(function () {
+    $('#email-clear').click(function () {
         clearForm();
     });
+
+    $('#newsletter').validate(
+        {
+            rules: {
+                email: {
+                    required: true,
+                    emai: true
+                },
+            },
+            message: {
+                email: {
+                    required: "Please enter a valid email"
+                },
+            },
+        });
+
+    $('#newsletter-send').click(function () {
+        $('newsletter').submit();
+    });
+
 });
 
