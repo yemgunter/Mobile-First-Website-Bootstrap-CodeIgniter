@@ -23,10 +23,95 @@ Mobile First CSS
     margin-right: auto;
 }
 
-.simple-border{
+.simple-border {
     border: 1px dashed darkgrey;
 }
 
+#header {
+    background-color: white;
+}
+#header img {
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+}
+
+.navbar-Collapse {
+    background-color: #e0a800;
+}
+
+#navbar-brand img {
+    width: 100%;
+    height: auto;
+}
+
+nav a {
+    max-width: 100%;
+    text-align: center;
+    color: #bd2130;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.container {
+    border: 2px;
+    max-width: 100%;
+    background: white;
+    border-radius: 7px;
+}
+
+.row {
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+}
+
+img .png {
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 7px;
+}
+
+img .jpg {
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 7px;
+}
+
+
+p{
+    font-family:"Fjalla One", sans-serif !important;
+    font-size: 20px;
+}
+
+h1{
+    font-family: 'Knewave', cursive;
+    font-size: 40px;
+    color: black;
+    margin: 0 !important;
+    padding: 0!important;
+}
+
+.container-about .face {
+    max-width: 100%;
+    float: left;
+    border-radius: 7px;
+
+}
+
+.form-div {
+    text-align: left;
+    background-color: #F6F7F8;
+    border: 3px solid indianred;
+    border-radius: 7px;
+
+    max-width: 100%;
+    max-height: 100%;
+    padding: 10px;
+    margin: 20px;
+}
 
 .col-md-4 {
     max-width: 100%;
@@ -39,10 +124,73 @@ Mobile First CSS
 .col-md-6 {
     max-width: 100%;
     padding: 15px;
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 15px;
 
 }
+
+
+
+hr {
+    border: 0;
+    height: 2px;
+    margin: 10px 0px 30px 0px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.home-newsletter {
+    max-width: 100%;
+    padding: 30px 0;
+    background: olive;
+    border-radius: 7px;
+}
+
+.home-newsletter .single {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.home-newsletter .single h2 {
+    text-align: justify;
+    font-size: 22px;
+    color: mediumvioletred;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.home-newsletter .single .form-control {
+    height: 50px;
+    background: rgba(255, 255, 255, 0.6);
+    border-color: #0b2e13;
+    border-radius: 20px 0 0 20px;
+}
+
+.home-newsletter .single .form-control:focus {
+    box-shadow: none;
+    border-color: #243c4f;
+}
+
+.home-newsletter .single .btn {
+    min-height: 50px;
+    border-radius: 0 20px 20px 0;
+    background: #243c4f;
+    color: #fff;
+}
+
+.copyright .col-md-6 a {
+    max-width: 100%;
+    text-align: center;
+    color: black;
+    display: inline-block;
+    text-transform: uppercase;
+
+}
+
+
+
 
 /*
 ***************************************
@@ -52,6 +200,14 @@ Media Queries
 
 /*this is for tablet*/
 @media (min-width: 468px) and (max-width: 768px) {
+    .header {
+        background-color: #EFF0F1;
+        margin: 0 auto;
+    }
+
+    p {
+        font: bold 18px sans-serif;
+    }
 
 
 }
