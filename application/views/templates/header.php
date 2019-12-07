@@ -1,7 +1,7 @@
  <!DOCTYPE html>
 <html>
     <head>
-        <title><?= $title ?></title>
+        <title>Tuki Teas & Treats</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
@@ -25,9 +25,10 @@
         <div id="header">
             <img src="assets/images/banner.png" alt="banner">
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
                    <div class="container">
-                       <a href="home" class="navbar-brand">
+
+                       <a class="navbar-brand waves-effect waves-light" href="home">
                            <img src="assets/images/banner-sm.png" class="logo" alt="Tuki Teas Treats small logo"/>
                        </a>
                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -35,9 +36,20 @@
                        </button>
                        <div class="collapse navbar-collapse" id="navbarCollapse">
                        <div class="navbar-nav ml-auto">
-                            <a href="home">Home</a>
-                            <a href="about">About</a>
-                            <a href="contact">Contact</a>
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link waves-effect waves-dark" href="home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link waves-effect waves-dark" href="gallery">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link waves-effect waves-dark" href="about">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link waves-effect waves-dark" href="contact">Contact</a>
+                                </li>
+                            </ul>
                    </div>
 
         </nav>
