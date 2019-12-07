@@ -1,29 +1,23 @@
 
 
         <div class="footer-section">
+            <section class="home-newsletter">
+            <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4 center">
-                    <h3>Life Events</h3>
-                        <i class="fa fa-calendar"></i>
-                        <p class="event">Class of 2029!</p>
-                </div>
-
-                <div class="col-lg-4 col-md-4 center">
-                     <h3>Receive My Newsletter</h3>
-                         <i class="fa fa-laptop"></i>
-                         <div class="footer-icons">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                         </div>
-                </div>
-
-                <div class="col-lg-4 col-md-4 center">
-                    <h3>Life Goals</h3>
-                        <i class="fa fa-fire"></i>
-                        <p class="goals">Keep my mother, Yolanda, encouraged!</p>
-                </div>
-             </div>
+            <div class="col-sm-12">
+            	<div class="single">
+            		<h2>Subscribe to my Newsletter</h2>
+            	<div class="input-group">
+                     <input type="email" class="form-control" id="newsletter" name="email" placeholder="Enter Your Email" maxlength="64" value="" required">
+                     <span class="input-group-btn">
+                     <button id="newsletter-send" class="btn btn-theme"  type="submit">Subscribe</button>
+                     </span>
+                      </div>
+            	</div>
+            </div>
+            </div>
+            </div>
+            </section>
        </div>
 
        <hr>
@@ -33,9 +27,9 @@
                     <p>Copyright &copy; 2019 Y. E. M. Gunter</p>
                </div>
                <div class="col-md-6 center">
-                   <a href="about">About</a>
+                   <a class="waves-effect waves-light" href="about">About</a>
                    <span>|</span>
-                   <a href="contact">Contact</a>
+                   <a class="waves-effect waves-light" href="contact">Contact</a>
                </div>
            </div>
        </div>
