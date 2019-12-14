@@ -41,5 +41,6 @@
         <!-- custom JS -->
         <script src="assets/js/main.js"></script>
     </div>
+    </div>
 </body>
 </html>

@@ -22,6 +22,7 @@
     </head>
 <body>
     <div class="body-container">
+    <div class="content-container">
         <div id="header">
             <img src="assets/images/banner.png" alt="banner">
         </div>
