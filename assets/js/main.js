@@ -127,7 +127,7 @@ $(document).ready(function () {
         }
         return errorMessage;
     }
-
+    $('#contact-send').submit(function (event) {
     var sendBtn = $('#contact-send');
     sendBtn.onclick = function () {
         var msgArea = $('#msg');
@@ -136,6 +136,7 @@ $(document).ready(function () {
             document.forms["email-form"].submit();
         } else {
             msgArea.innerHTML = msg;
+            event.preventDefault();
         }
     };
 
@@ -143,5 +144,16 @@ $(document).ready(function () {
     clearBtn.onclick = function () {
         clearForm();
     };
+
+    $('#newsletter-send').submit(function (event) {
+        var regex = /^[a-zA-Z]+$/;
+        var currentValue = $("#newsletter").val ();
+        if(regex.test(currentValue) == false) {
+            $("#result").html('<p class="error">Not Valid!</p>').show();
+            event.preventDefault();
+        }
+    });
 });
+
+
 
