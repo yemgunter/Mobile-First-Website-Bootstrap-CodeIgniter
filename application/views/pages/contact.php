@@ -1,4 +1,5 @@
 <div class="container-contact">
+<div class="content-container">
 <br>
     <div id="msg">
         <?= $send ?>
@@ -15,7 +16,7 @@
 
                 <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" maxlength="64" value="" required>
 
-                <textarea class="form-control" cols="40" id="message" name="message" placeholder="Enter Your Message" maxlength="1000" rows="10"  required ></textarea>
+                <textarea class="form-control" cols="40" id="message" name="message" placeholder="Enter Your Message" maxlength="1000" rows="5"  required ></textarea>
             </div>
 
             <div class="form-actions">
@@ -25,6 +26,7 @@
         </form>
 
     </div>
+</div>
 </div>
 
 
