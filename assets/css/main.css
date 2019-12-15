@@ -5,7 +5,6 @@
  Notes: Pulling everything I've learned together for my Final Project
  **************************************************************/
 
-
 /*
 ***************************************
 Mobile First CSS
@@ -56,11 +55,85 @@ nav a {
     vertical-align: middle;
 }
 
-.container {
-    border: 2px;
+.body {
     max-width: 100%;
-    background: white;
+    padding: 30px;
+    background-image: url('/assets/images/lil_lemons.png');
+}
+
+.body-container {
+    max-width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    background-image: url('/assets/images/lil_lemons.png');
+}
+
+.content-container {
+    max-width: 100%;
+    border: 1px #fff6dc;
+    padding: 30px;
+    align-content: space-evenly;
+}
+
+.container {
+    max-width: 100%;
+    padding: 10px;
+    align-content: space-evenly;
+}
+
+.container-home {
+    max-width: 100%;
+    padding: 10px;
+}
+
+#feature {
+    max-width: 100%;
+    padding: 20px;
     border-radius: 7px;
+    text-align: center;
+}
+
+#feature img {
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.container-gallery {
+    max-width: 100%;
+    padding: 10px;
+    background-color: #F9AD81;
+    position: center;
+    border-radius: 7px;
+}
+
+#gallery-box {
+    width: 100%;
+}
+
+#gallery-box img {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+.container-about {
+    max-width: 100%;
+    padding: 10px;
+    position: center;
+}
+
+.face {
+    max-width: 100%;
+    float: none;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.intro-section {
+    padding: 20px;
+    color: #155724;
+    text-align: center;
 }
 
 .row {
@@ -70,16 +143,14 @@ nav a {
 
 img .png {
     max-width: 100%;
-    vertical-align: middle;
     border-radius: 7px;
+    float: none;
 }
 
 img .jpg {
     max-width: 100%;
-    vertical-align: middle;
     border-radius: 7px;
 }
-
 
 p{
     font-family:"Fjalla One", sans-serif !important;
@@ -94,42 +165,45 @@ h1{
     padding: 0!important;
 }
 
-.container-about .face {
+.container-contact {
     max-width: 100%;
-    float: left;
+    padding: 10px;
+    background-color: #7DA7D9;
     border-radius: 7px;
-
 }
 
 .form-div {
     text-align: left;
     background-color: #F6F7F8;
-    border: 3px solid indianred;
+    border: 3px solid #fff3cd;
     border-radius: 7px;
 
     max-width: 100%;
     max-height: 100%;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
+}
+
+.form-control {
+    padding: 10px;
+}
+
+.col-md {
+    max-width: 100%;
+    padding: 5px;
 }
 
 .col-md-4 {
     max-width: 100%;
-    padding: 15px;
+    padding: 5px;
     font-size: 14px;
-    margin-bottom: 15px;
-
 }
 
 .col-md-6 {
     max-width: 100%;
-    padding: 15px;
+    padding: 5px;
     font-size: 14px;
-    margin-bottom: 15px;
-
 }
-
-
 
 hr {
     border: 0;
@@ -140,8 +214,8 @@ hr {
 
 .home-newsletter {
     max-width: 100%;
-    padding: 30px 0;
-    background: olive;
+    padding: 10px 0;
+    background: yellow;
     border-radius: 7px;
 }
 
@@ -154,7 +228,7 @@ hr {
 }
 
 .home-newsletter .single h2 {
-    text-align: justify;
+    text-align: center;
     font-size: 22px;
     color: mediumvioletred;
     text-transform: uppercase;
@@ -186,11 +260,7 @@ hr {
     color: black;
     display: inline-block;
     text-transform: uppercase;
-
 }
-
-
-
 
 /*
 ***************************************
@@ -209,11 +279,14 @@ Media Queries
         font: bold 18px sans-serif;
     }
 
-
+    h1 {
+        color: #004085;
+    }
 }
 
 /*this is for desktop*/
 @media (min-width: 768px) {
-
-
+    h1 {
+        color: #721c24;
+    }
 }
