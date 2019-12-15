@@ -14,13 +14,13 @@ $(document).ready(function () {
     $('body').css("width", "90%");
     $('body').css("margin", "0", "auto");
     $('body').css("text-align", "justify");
-    $('body').css("background-color", "yellow");
     $('body').css("position", "relative");
     $('body').css("float", "left");
     $('body').css("margin-left", "50%");
     $('body').css("left", "-45%");
 
     // Container element styling for content readability
+    $('.container').css("float", "none");
     $('.container-home').css("background-color", "white");
     $('.container-gallery').css("background-color", "#F9AD81");
     $('.container-about').css("background-color", "white");
@@ -36,6 +36,11 @@ $(document).ready(function () {
     $('.navbar').css("background-color", "transparent");
     $('.navbar').css("border-radius", "7px");
     $('.navbar-brand').css("width", "100%");
+
+    // Home feature section styling
+    $('#feature').css("text-align", "center");
+    $('#feature').css("width", "90%");
+    $('#feature').css("background-color", "yellow");
 
     $('.col-lg-4').css("text-align", "center");
 
@@ -56,97 +61,87 @@ $(document).ready(function () {
     $('.footer-section').css("horizontal-align", "center");
 
     // Form client-side validation
-    $('#email-form').validate(
-        {
-            rules: {
-                name: {
-                    required: true,
-                    minlength: 2
-                },
-                email1: {
-                    required: true,
-                    email: true
-                },
-                email2: {
-                    required: true,
-                    email: true,
-                    equalTo: "#email1"
-                },
-                subject: {
-                    required: true,
-                    minlength: 5
-                },
-                message: {
-                    required: true,
-                    minlength: 20
-                },
-            },
-            messages: {
-                name: {
-                    required: "Please enter your name",
-                    minlength: "Minimum length is 2 characters"
-                },
-                email1: {
-                    required: "Please enter a valid email",
-                },
-                email2: {
-                    required: "Please re-enter your email",
-                    equalTo: "Your emails must match"
-                },
-                subject: {
-                    required: "Please enter a subject",
-                    minlength: "Minimum length is 5 characters"
-                },
-                message: {
-                    required: "Please enter your message",
-                    minlength: "Minimum length is 20 characters"
-                },
+    function clearForm() {
 
-                highlight: function(element) {
-                    $(element).closest('.control-group').removeClass('success').addClass('error');
-                },
+        $('#name').value = "";
+        $('#email').value = "";
+        $('#email2').value = "";
+        $('#subject').value = "";
+        $('#message').value = "";
+        $('#msg').innerHTML = "<br>";
+    }
 
-                success: function(element) {
-                element
-                    .text('OK!').addClass('valid')
-                    .closest('.control-group').removeClass('error').addClass('success');
-                }
-        });
+    function validEmail(email) {
+        /* do not modify this fucntion, just use it as is */
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
 
+    function validate() {
+        var errorMessage = "";
 
-    $('#email-send').click(function () {
-        $('#email-form').submit();
-        var msg = validate();
-        console.log(msg);
-        if (msg) {
-            $("#msg").html(msg);
-        } else {
-            $('#email-form').submit();
+        //all the elements into the function
+        var nameInput = $('#name');
+        var emailInput = $('#email');
+        var email2Input = $('#email2');
+        var subjectInput = $('#subject');
+        var messgeInput = $('#message');
+
+        //all the strings in the elements trimmed
+        var name = nameInput.value.trim();
+        var email = emailInput.value.trim();
+        var email2 = email2Input.value.trim();
+        var subject = subjectInput.value.trim();
+        var message = messgeInput.value.trim();
+
+        //trimmed versions back into form for good UX
+        nameInput.value = name;
+        emailInput.value = email;
+        email2Input.value = email2;
+        subjectInput.value = subject;
+        messgeInput.value = message;
+
+        //test strings from form and store errors
+        if (name === "") {
+            errorMessage += "Name cannot be empty.<br>";
         }
-    });
 
-    $('#email-clear').click(function () {
+        if (email === "") {
+            errorMessage += "First email is not valid.<br>";
+        }
+
+        if (email2 === "") {
+            errorMessage += "Second email is not valid.<br>";
+        }
+
+        if (email2 !== email) {
+            errorMessage += "Emails must match.<br>";
+        }
+
+        if (subject === "") {
+            errorMessage += "Subject cannot be empty.<br>";
+        }
+
+        if (message === "") {
+            errorMessage += "Message cannot be empty.<br>";
+        }
+        return errorMessage;
+    }
+
+    var sendBtn = $('#contact-send');
+    sendBtn.onclick = function () {
+        var msgArea = $('#msg');
+        var msg = validate();
+        if (msg === "") {
+            document.forms["email-form"].submit();
+        } else {
+            msgArea.innerHTML = msg;
+        }
+    };
+
+    var clearBtn = $('#email-clear');
+    clearBtn.onclick = function () {
         clearForm();
-    });
-
-    $('#newsletter').validate(
-        {
-            rules: {
-                email: {
-                    required: true,
-                    emai: true
-                },
-            },
-            message: {
-                email: {
-                    required: "Please enter a valid email"
-                },
-            },
-        });
-
-    $('#newsletter-send').click(function () {
-        $('newsletter').submit();
-    });
-
+    };
 });
 
