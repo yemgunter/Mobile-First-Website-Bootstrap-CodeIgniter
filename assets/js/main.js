@@ -127,7 +127,7 @@ $(document).ready(function () {
         }
         return errorMessage;
     }
-    $('#contact-send').submit(function (event) {
+    $("email-form").submit(function (event) {
     var sendBtn = $('#contact-send');
     sendBtn.onclick = function () {
         var msgArea = $('#msg');
@@ -145,7 +145,7 @@ $(document).ready(function () {
         clearForm();
     };
 
-    $('#newsletter-send').submit(function (event) {
+    $("form").submit(function (event) {
         var regex = /^[a-zA-Z]+$/;
         var currentValue = $("#newsletter").val ();
         if(regex.test(currentValue) == false) {

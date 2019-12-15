@@ -7,7 +7,7 @@
             <div class="col-sm-12">
             	<div class="single">
             		<h2>Subscribe to my Newsletter</h2>
-            	<form action="home" method="post" id="users">
+            	<form action="" method="post" id="users">
                      <input type="email" name="newsletter" id="newsletter" placeholder="Enter Your Email" maxlength="64" value="" required">
                      <span class="input-group-btn">
                      <button id="newsletter-send" class="btn btn-theme"  type="submit">Subscribe</button>
