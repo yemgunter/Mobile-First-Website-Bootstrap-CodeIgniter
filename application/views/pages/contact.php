@@ -24,9 +24,8 @@
                 <button id="email-clear" type="reset" class="btn btn-primary">Clear</button>
             </div>
         </form>
-
     </div>
-</div>
+
 </div>
 
 
