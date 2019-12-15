@@ -18,13 +18,37 @@
        <!-- External Custom CSS -->
        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
        <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-
     </head>
 <body>
     <div class="body-container">
     <div class="content-container">
-        <div id="header">
-            <img src="assets/images/banner.png" alt="banner">
+            <div id="header" class="carousel-slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselHeader" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselHeader" data-slide-to="1"></li>
+                    <li data-target="#carouselHeader" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                         <img src="assets/images/banner.png" class="d-block w-100" alt="Banner 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/banner2.png" class="d-block w-100" alt="Banner 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/banner3.png" class="d-block w-100" alt="Banner 3">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselHeader" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselHeader" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
         </div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
                    <div class="container">
